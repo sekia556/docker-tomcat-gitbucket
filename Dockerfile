@@ -10,7 +10,7 @@ RUN mkdir -p $GITBUCKET_HOME
 
 ## Deploy gitbucket.war as ROOT.war
 RUN rm -rf $CATALINA_HOME/webapps/*
-ADD https://github.com/sekia556/gitbucket/releases/download/3.8.1/gitbucket.war $CATALINA_HOME/webapps/ROOT.war
+ADD https://github.com/sekia556/gitbucket/releases/download/3.6.1/gitbucket.war $CATALINA_HOME/webapps/ROOT.war
 
 RUN ln -s $GITBUCKET_HOME /tmp/gitbucket
 RUN ln -s $CATALINA_HOME/logs /tmp/tomcat_logs
