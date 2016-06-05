@@ -1,6 +1,6 @@
 # tomcat-gitbucket
 
-Dockerfile for [gitbucket-3.11](https://github.com/gitbucket/gitbucket) with tomcat:8-jre8 image (java-1.8, tomcat 8).
+Dockerfile for [gitbucket-3.12](https://github.com/gitbucket/gitbucket) with tomcat:8-jre8 image (java-1.8, tomcat 8).
 
 
 ## Usage
