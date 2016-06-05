@@ -20,6 +20,11 @@ VOLUME /opt/gitbucket
 # /usr/local/tomcat/logs
 VOLUME /opt/tomcat_logs
 
+# Web Page
 EXPOSE 8080
+
+# (Optional) port for SSH to git repository
+EXPOSE 29418
+
 CMD ["catalina.sh", "run"]
 
