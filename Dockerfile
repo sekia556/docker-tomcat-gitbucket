@@ -1,5 +1,5 @@
 FROM tomcat:8-jre8
-## Gitbucket 3.11 is built/tested on java8
+## Gitbucket 4.1 is built/tested on java8
 
 MAINTAINER sekia556 <sekia556 [at] yahoo.co.jp>
 
@@ -10,7 +10,7 @@ RUN mkdir -p $GITBUCKET_HOME
 
 ## Deploy gitbucket.war as ROOT.war
 RUN rm -rf $CATALINA_HOME/webapps/*
-ADD https://github.com/gitbucket/gitbucket/releases/download/3.11/gitbucket.war $CATALINA_HOME/webapps/ROOT.war
+ADD https://github.com/gitbucket/gitbucket/releases/download/4.1/gitbucket.war $CATALINA_HOME/webapps/ROOT.war
 
 RUN ln -s $GITBUCKET_HOME /opt/gitbucket
 RUN ln -s $CATALINA_HOME/logs /opt/tomcat_logs
